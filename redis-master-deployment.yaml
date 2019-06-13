@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: redis-master
+  namespace: nitin
 spec:
   replicas: 1
   template:
@@ -20,4 +21,3 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 6379
-        
